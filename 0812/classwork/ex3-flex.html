@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CW EX1</title>
+  <style>
+    * { 
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      font-size: 30px;
+      box-sizing: border-box;
+    }
+    div { 
+      padding: 0;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .box-1 {
+      width: 300px;
+      background: #fcc;
+    }
+    .box-2 {
+      width: 50px;
+      height: 200px;
+      background: #ccf;
+    }
+    .l {
+      width: 50px;
+      background: #ffc;
+      background: linear-gradient(30deg, #ff6,#9f9);
+      float: left;
+    }
+    .r {
+      width: 150px;
+      background: linear-gradient(30deg, #ff6,#cfc);
+      float: left;
+    }
+    .box-6 {
+      width: 50px;
+      height: 200px;
+      background: #ccf;
+    }
+    .box-7 {
+      width: 300px;
+      background: #c9c;
+    }
+    .row {
+      flex-direction: row;
+      height: 300px;
+    }
+    .group {
+      flex-direction: column;
+    }
+    .c {
+      clear: both;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box-1">1</div>
+  <div class="row">
+    <div class="box-2">2</div>
+    <div class="group">
+      <div>
+        <div class="l">L</div>
+        <div class="r">R</div>
+      </div>
+      <div>
+        <div class="r">R</div>
+        <div class="l">L</div>
+      </div>
+      <div>
+        <div class="l">L</div>
+        <div class="r">R</div>
+      </div>
+    </div>
+    <div class="box-6">6</div>
+    <div class="c"></div>
+  </div>
+  <div class="box-7">7</div>
+</body>
+</html>
