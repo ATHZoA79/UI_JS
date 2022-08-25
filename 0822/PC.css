@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.ham, #ham-menu-switch {
+  display: none;
+}
+
+/* sidebar */
+.side {
+  width: 366px;
+  height: 100%;
+  float: left;
+  background: #707C74;
+}
+.content {
+  width: 150px;
+  height: 540px;
+  position: relative;
+  top: 75px;
+  left: 107px;
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 62px;
+  background-image: url(./image/profile-img.png);
+  background-size: cover;
+}
+.link {
+  width: 60%;
+  height: 28px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  text-decoration: none;
+  color: #fff;
+  transition: all ease-out .25s;
+}
+.link+.link {
+  margin-top: 20px;
+}
+.link:hover {
+  color: #fff;
+  font-weight: bold;
+  border-left: solid 5px #444;
+}
+.link:active {
+  color: #9e1d24;
+}
+
+.link i {
+  margin-right: 10px;
+  visibility: hidden;
+  transition: all ease-out .25s;
+}
+.link:hover i {
+  color: #9e1d24;
+  visibility: visible;
+}
+.link:active i {
+  visibility: visible;
+  color: #9e1d24;
+}
+.link p {
+}
+
+/* wrap */
+.wrap {
+  width: calc(100% - 366px);
+  height: 100%;
+  float: left;
+  background: #26453D;
+}
+.box {
+  width: 957px;
+  height: 570px;
+  position: relative;
+  left: calc((100% - 957px)/2);
+  top: calc((100% - 570px)/2);
+}
+.item {
+  width: calc((100% - 12px)/3);
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 36px;
+  color: #fff;
+  background: #666;
+  background-size: cover;
+  background-position: 0;
+  box-shadow: inset 0 0 25px 0  #666;
+  opacity: .7;
+  transition: all ease-out .2s;
+}
+.item:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 10px 0 #446634;
+  opacity: 1;
+}
+.item-1 {
+  background-image: url(./image/card-1.jpg);
+}
+.item.item-2 {
+  margin: 0 6px;
+  background-image: url(./image/card-2.jpeg);
+}
+.item-3 {
+  background-image: url(./image/card-3.jpg);
+}

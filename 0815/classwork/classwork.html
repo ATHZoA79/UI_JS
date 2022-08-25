@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../reset.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+
+    /* position 定位 */
+
+    .red {
+      position: relative;
+      left: 150px;
+      background: #f00;
+    }
+    .green {
+      background: #0f0;
+      /* position: absolute; */
+      top: 5px;
+      left: 5px;
+    }
+    .blue {
+      background: #00f;
+    }
+
+    .inner-red {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background: #f63;
+
+    }
+
+    /* ------------ */
+
+    /* cal 計算位置 */
+    .wrap {
+      position: relative;
+      width: 500px;
+      height: 300px;
+      /* background: #6cf; */
+      border: solid 1px #000;
+    }
+    .item {
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 0, 0, .75);
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .b1 {
+      top: calc(50% - 50px/2);
+      left: calc(50% - 50px/2);
+    }
+    .b2 {
+      left: calc(50% - 50px/2);
+    }
+    .b3 {
+      bottom: 0;
+      right: 50%;
+    }
+    .b4 {
+      top: calc(50% - 50px / 2);
+      right: -25px;
+      z-index: -1;
+      justify-content: end;
+      padding-right: 5px;
+      /* background: #39f; */
+    }
+    .b5 {
+      bottom: 0;
+      right: 0;
+    }
+    .b6 {
+      top: calc(50% - 50px / 2);
+      left: 0;
+    }
+    .b7 {
+      top: calc(50% - 50px / 2);
+      right: 0;
+    }
+    .b8 {
+      top: calc(100% - 50px / 2);
+      left: 0;
+      z-index: -1;
+    }
+    .hl {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border: dashed 2px #000;
+      position: absolute;
+      top: calc(50% - 1px);
+    }
+    .vl {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      border: dashed 2px #000;
+      position: absolute;
+      left: calc(50% - 1px);
+    }
+  </style>
+</head>
+<body>
+  
+<!-- <div class="box red">
+  <div class="inner-red"></div>
+</div>
+<div class="box green"></div>
+<div class="box blue"></div> -->
+
+  <div class="wrap">
+    <div class="item b1">1</div>
+    <div class="item b2">2</div>
+    <div class="item b3">3</div>
+    <div class="item b4">(4)</div>
+    <div class="item b5">5</div>
+    <div class="item b6">6</div>
+    <div class="item b7">7</div>
+    <div class="item b8">8</div>
+    <div class="hl"></div>
+    <div class="vl"></div>
+  </div>
+</body>
+</html>

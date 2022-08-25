@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    }
+    .wrap {      
+      width: 80vw;
+      height: 600px;
+      position: relative;
+      margin: auto;
+      padding: 10px;
+      background: #FFEBCD;
+      /* border: solid 15px #f00; */
+      /* border box 以邊框外圍為基準 */
+    }
+
+    .header {
+      width: 100%;
+      height: calc(( 100% - 20px ) * .2);
+      background: #FFD700;
+    }
+    .main {
+      width: 100%;
+      height: calc((100% - 20px) * .6);
+      margin: 10px 0;
+      /* background: #39c; */
+    }
+    .mainL {
+      width: calc((100% - 10px) * .34);
+      height: 100%;
+      margin-right: 10px;
+      float: left;
+      background: #87CEFA;
+    }
+    .mainR {
+      width: calc((100% - 10px) * .66);      
+      height: 100%;
+      float: left;
+      /* background: #3cf; */
+    }
+    .mainR-top {
+      width: 100%;
+      height: calc((100% - 20px) * 0.34);
+      background: #B0C4DE;
+    }
+    .mainR-middle {
+      width: 100%;
+      height: calc((100% - 20px) * 0.32);
+      margin: 10px 0;
+      background: #FF69B4;
+    }
+    .mainR-bottom {
+      width: 100%;
+      height: calc((100% - 20px) * 0.34);
+      background: #ADFF2F;
+    }
+    
+    .footer {
+      width: 100%;
+      height: calc((100% - 20px) * .2);
+      background: #20B2AA;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header"></div>
+    <div class="main">
+      <div class="mainL"></div>
+      <div class="mainR">
+        <div class="mainR-top"></div>
+        <div class="mainR-middle"></div>
+        <div class="mainR-bottom"></div>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </div>
+</body>
+</html>

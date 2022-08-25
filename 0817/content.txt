@@ -1,0 +1,12 @@
+## Parallax
+background 
+- image
+- size
+- position
+- repeat
+- attachment
+
+
+## transform
+
+## Animation(tomorrow)

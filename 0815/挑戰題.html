@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin:0;
+    }
+    .all {
+      width: 100%;
+      background-color: aqua;
+      height:600px;
+    }
+    .box {
+      width: 100%;
+      height: 100%;
+    }
+    .row{
+      width: 100%;
+      background-color: white;
+    }
+    .row1-3{
+      height: 33.3%;
+    }
+    .row2{
+      height: 33.4%;
+    }
+
+    .box-inner {
+      width: 40%;
+      height: 100%;
+    }
+
+    .left {
+      /* width: 40%;
+      height: 100%; */
+      background-color: brown;
+      float: left;
+    }
+
+    .right {
+      /* width: 40%;
+      height: 100%; */
+      background-color: purple;
+      float: right;
+    }
+
+    .middle{
+      /* width: 40%;
+      height: 100%; */
+      background-color: aquamarine;
+      margin: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- .all>.box>.row1+.row2+.row3 -->
+  <!-- .all>.box>(.row1>.left+.right)+(.row2>.middle)+.row3>.left+.right -->
+  <div class="all">
+    <div class="box">
+      <div class="row row1-3">
+        <div class="box-inner left"></div>
+        <div class="box-inner right"></div>
+      </div>
+      <div class="row row2">
+        <div class="box-inner middle"></div>
+      </div>
+      <div class="row row1-3">
+        <div class="box-inner left"></div>
+        <div class="box-inner right"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

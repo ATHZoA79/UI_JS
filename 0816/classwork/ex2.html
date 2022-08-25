@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {}
+
+    .wrap {
+      width: 70%;
+      height: 600px;
+      margin: auto;
+      padding: 10px;
+      border: dashed 1px #f00;
+      background: #ccc;
+    }
+    .box-side {
+      width: calc((100% - 40px) * .34);
+      /* width: 34%; */
+      height: 100%;
+    }
+    .mid {
+      width: calc((100% - 40px) * .32);
+      height: 100%;
+      margin: 0 20px 0;
+    }
+    /* .space {
+      width: 20px;
+      height: 100%; 
+      float: left;
+      background: #666;
+    } */
+
+    .r {
+      float: left;
+      background: #f00;
+    }
+    .b {
+      background: #00f;
+      float: left;
+    }
+    .y {
+      float: right;
+      background: #ff0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="item box-side r"></div>
+    <div class="item mid b"></div>
+    <div class="item box-side y"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../reset.css">
+
+  <style>
+    /* 邊界、內外距 */
+    /* 容器空間計算 */
+    /* 字體 */
+    * {
+      box-sizing: border-box;
+    }
+    /* .wrap {
+      width: 500px;
+      height: 500px;
+      background: #fc3;
+      padding: 100px;
+      position: relative;
+    } */
+      
+    /* .item {
+      width: 300px;
+      height: 300px;
+      border: 10px solid #fff;
+      border-radius: 150px;
+      background: #f9f;
+      font-size: 28px;
+      font-weight: 900;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+    } */
+
+    /* 區塊水平置中、文字置中 */
+    /* margin: auto; */
+    /* text-align: center; */
+
+    /* 視窗大小單位 vw vh */
+
+    .box {
+      width: 300px;
+      height: 200px;
+      border: dashed 1px #33c;
+    }
+    .item-left {
+      margin-left: 50px;
+      float: left;
+      background: #c00;
+      clear: right;
+    }
+    .item-right {
+      margin-right: 50px;
+      float: right;
+      background: #c00;
+      /* clear: both; */
+    }
+    .item-mid {
+      margin: auto;
+      background: #66c;
+      clear: both;
+    }
+
+    .container {
+      width: 100vw;
+      height: 800px;
+      border: solid 2px #933;
+    }
+    .group {
+      width: 900px;
+      height: 200px;
+      /* overflow: hidden; */
+      margin: auto;
+      background: #ccc;
+    }
+    .item-right::after {
+      content: "";
+      margin: 0;
+      padding: 0;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="wrap">
+    <div class="item">( ; w ; )</div>
+  </div> -->
+  <div class="container">
+    <div class="group">
+      <div class="box item-left">1</div>
+      <div class="box item-right">2</div>
+      <div class="c"></div>
+    </div>
+    <div class="box item-mid">3</div>
+    <div class="group">
+      <div class="box item-left">4</div>
+      <div class="box item-right">5</div>
+    </div>
+  </div>
+</body>
+</html>

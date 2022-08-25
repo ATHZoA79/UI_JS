@@ -1,0 +1,469 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: black;
+    }
+
+    body {
+      width: 100%vw;
+      height: 1200px;
+      background: #18191a;
+    }
+
+    .box {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav {
+      height: 56px;
+      background: #242526;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+
+      z-index: 1;
+    }
+
+    .box-2 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      background: #242526;
+    }
+
+    .content {
+      width: 1250px;
+      height: 100%;
+      margin: auto;
+      float: left;
+      /* padding: 50px; */
+      /* background: #aaa; */
+    }
+
+    .ico {
+      width: 40px;
+      height: 40px;
+      margin-left: 50px;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+    }
+
+    .search {
+      width: 280px;
+      height: 40px;
+      position: relative;
+      margin-left: 20px;
+    }
+    .search label {
+      width: 28px;
+      height: 100%;
+      padding-left: 8px;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      background: #3A3B3C;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .search label i {
+      color: #5F6163;
+    }
+    .search input {
+      width: clac(100%-28px);
+      height: 100%;
+      float: left;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 0 10px 0;
+      background: #3A3B3C;
+    }
+
+    .message {
+      width: 204px;
+      padding: 0 16px 0 4px;
+      position: absolute;
+      display: flex;
+      right: 0;
+      /* background: #469; */
+    }
+    .m-icon {
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      margin: 0 2px 0;
+      position: relative;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      background: #3A3B3C;
+      font-size: 20px;
+    }
+    .m-icon i {
+      color: #E4E6EB;
+    }
+    .alert {
+      height: 20px;
+      padding: 0 5px;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      background: #f00;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      font-family: 'Noto Sans TC', sans-serif;
+      z-index: 1;
+    }
+    .message > .m-icon {
+      background-image: url(../image/profile.jpg);
+      background-size: contain;
+    }
+
+      /* main content  */
+    .banner {
+      width: 100%;
+      height: 493px;
+      position: relative;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background: #18191A;
+      box-shadow: inset 0 -50px 40px -10px #000;
+    }
+    .add-img {
+      width: 136px;
+      height: 36px;
+      padding: 0 12px;
+      position: absolute;
+      bottom: 16px;
+      right: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: .875rem;
+      font-weight: 700;
+      color: #1D1F23;
+      border-radius: 5px;
+      background: #fff;
+    }
+    .portfolio {
+      width: 96%;
+      height: 146px;
+      margin: auto;
+      position: relative;
+      /* background: #663; */
+    }
+    .port-img {
+      width: 168px;
+      height: 168px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      /* border: solid 2px #f00; */
+      border-radius: 84px;
+      background: #fff;
+      background-image: url(../image/profile.jpg);
+      background-size: contain;
+    }
+    .port-info {
+      width: calc((100% - 168px) *.5);
+      height: 100%;
+      padding: 16px 20px 16px;
+      position: absolute;
+      left: 168px;
+      /* border: solid 2px #09f; */
+    }
+    .user {
+      color: #E4E6EB;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight: 900;
+      font-size: 36px;
+    }
+    .friend-title {
+      color: #B0B3B8;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 1.0625rem;
+      position: relative;
+      /* top: -8px; */
+    }
+    .friend {
+      width: 80px;
+      height: 44px;
+      padding-right: 8px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+    .f-frame {
+      width: 32px;
+      height: 32px;
+      margin-right: -12px;
+      border: solid 1px #000;
+      border-radius: 18px;
+      /* background: #fff; */
+    }
+    .f-frame:first-child {
+      margin: 0;
+      /* background: #f00; */
+      
+    }
+    .f-frame i {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      border-radius: 18px;
+      color: #fff;
+      opacity: .5;
+    }
+    .f-frame .f-img {
+      width: 32px;
+      height: 32px;
+      border: solid 1px #000;
+      border-radius: 16px;
+      background: #fff;
+    }
+
+    .edit {
+      width: 273px;
+      height: 36px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      /* background: #369; */
+      /* display: flex;
+      align-items: center; */
+    }
+    .add-story {
+      width: 151px;
+      height: 100%;
+      float: left;
+      border: none;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFF;
+      background: #2374E1;
+      /* background: #699; */
+    }
+    .edit-info {
+      width: 106px;
+      height: 100%;
+      float: right;
+      border: none;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFF;
+      background: #3A3B3C;
+      /* background: #669; */
+    }
+    .edit i {
+      padding-right: 4px;
+      color: #FFF;
+    }
+
+    /* info-menu */
+    .info-menu {
+      width: 96%;
+      height: 60px;
+      margin: auto;
+    }
+    .menu {
+      height: 60px;
+      padding: 0 20px 0;
+      line-height: 60px;
+      color: #B0B3B8;
+      font-weight: bolder;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-family: 'Roboto', sans-serif;
+    }
+    .a-menu {
+      height: 60px;
+      text-decoration: none;
+      float: left;
+    }
+    .option {
+      width: 48px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      float: right;
+    }
+    .option .menu {
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: 10px;
+      background: #3A3B3C;  
+    }
+    .option .menu i {
+      color: #E4E6EB;
+    }
+
+    .space {
+      width: 96%;
+      height: 1rem;
+      margin: auto;
+      /* background: #595; */
+      border-bottom: solid 1px #3E4041;
+    }
+
+    .c {
+      clear: both;
+    }
+    .empty-box {
+      width: 100%;
+      height: 56px;
+      background: #f00;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <div class="box nav">
+    <div class="ico">
+      <img src="../image/facebook_icon_webp.webp" alt="">
+    </div>
+    <div class="search">
+      <label for="">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </label>
+      <input type="text" class="">
+    </div>
+    <div class="message">
+      <a href="#">
+        <div class="m-icon">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </a>
+      <a href="#">
+        <div class="m-icon">
+          <i class="fa-solid fa-comment"></i>
+        </div>
+      </a>
+      <a href="#">
+        <div class="m-icon">
+          <i class="fa-solid fa-bell"></i>
+          <div class="alert">99+</div>
+        </div>
+      </a>
+      <div class="m-icon"></div>
+    </div>
+  </div>
+  <div class="empty-box">123</div>
+  <!-- main content area -->
+  <div class="box box-2">
+    <div class="content">
+      <div class="banner">
+        <a href="#">
+          <div class="add-img">
+            <i class="fa-solid fa-camera"></i>
+            加上封面相片
+          </div>
+        </a>
+      </div>
+      <div class="portfolio">
+        <div class="port-img"></div>
+        <div class="port-info">
+          <div class="user">Anthony Hsu</div>
+          <div class="friend-title">38位</div>
+          <div class="friend">
+            <div class="f-frame">
+            </div>
+            <div class="f-frame">
+              <div class="f-img"></div>
+            </div>
+            <div class="f-frame">
+              <div class="f-img"></div>
+            </div>
+          </div>
+        </div>
+        <div class="edit">
+          <div class="add-story">
+            <i class="fa-solid fa-circle-plus"></i>
+            新增動態消息
+          </div>
+          <div class="edit-info">
+            <i class="fa-solid fa-pen"></i>
+            編輯檔案
+          </div>
+        </div>
+      </div>
+      <div class="space"></div>
+      <!-- portfolio end -->
+      <!-- info-menu -->
+      <div class="info-menu">
+        <a href="#" class="a-menu">
+          <div class="menu">貼文</div>
+        </a>
+        <a href="#" class="a-menu">
+          <div class="menu">關於</div>
+        </a>
+        <a href="#" class="a-menu">
+          <div class="menu">朋友</div>
+        </a>
+        <a href="#" class="a-menu">
+          <div class="menu">相片</div>
+        </a>
+        <a href="#" class="a-menu">
+          <div class="menu">影片</div>
+        </a>
+        <a href="#" class="a-menu">
+          <div class="menu">打卡動態</div>
+        </a>
+        <a href="#" class="a-menu">
+          <div class="menu">更多貼文</div>
+        </a>
+        <a href="#" class="a-menu option"">
+          <div class="menu">
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </a>
+        <div class="c"></div>
+      </div>
+    </div>
+    
+    <div class="c"></div>
+  </div>
+</body>
+
+</html>

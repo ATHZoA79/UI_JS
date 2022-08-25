@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      margin: auto;
+      position: relative;
+    }
+    .nav {
+      width: 100%;
+      height: 100px;
+      position: fixed;
+      /* background: #000; */
+      z-index: 1;
+    }
+    .icon {
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 60px;
+    }
+    .icon i {
+      transition:  all ease-out .5s;
+      color: #8ac;
+    }
+    .icon:hover i {
+      scale: 1.25;
+      color: #333;
+    }
+
+    .nav-item {
+      height: 100%;
+      margin-right: 20px;
+      float: right;
+      display: flex;
+      align-items: center;
+      /* background: #36c; */
+    }
+    .item-box {
+      width: 100px;
+      height: 54px;
+      margin: 0 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      background: #666;
+      color: #fff;
+      text-decoration: none;
+      opacity: .8;
+      transition: all ease-out .3s;
+    }
+    .item-box:hover {
+      background: #333;
+      opacity: 1;
+    }
+    /* nav end */
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+    .banner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: .75;
+      z-index: 0;
+    }
+    .banr-1 {
+      background-image: url(../image/sample_img-3.jpg);
+    }
+    .banr-2 {
+      /* height: 50%vh; */
+      background-image: url(../image/sample_img-4.jpg);
+    }
+    .banr-3 {
+      background-image: url(../image/sample_img-5.jpg);
+    }
+
+    .scroll_btn_1 {
+      width: 200px;
+      height: 60px;
+      position: relative;
+      top: calc((100% - 60px) / 2);
+      left: calc((100% - 200px) / 2);
+      font-size: 1rem;
+      text-align: center;
+      line-height: 60px;
+      background: #333;
+      color: #ccc;
+      z-index: 1;
+    }
+    /* .btn_mask-2 {
+      width: 100%;
+      height: 50vh;
+      position: relative;
+      top: 50%;
+      background: #000;
+      opacity: .6;
+    } */
+    /* .scroll_btn_2 {
+      width: 200px;
+      height: 60px;
+      position: relative;
+      top: calc( 25% - 30px );
+      left: calc((100% - 200px) / 2);
+      font-size: 1rem;
+      text-align: center;
+      line-height: 60px;
+      background: #ccc;
+      color: #333;
+      z-index: 1;
+    } */
+    .title_content_1 {
+      width: 100%;
+      padding: 2rem 1.25rem;
+      line-height: 1.5;
+      background-color: #fff;
+    }
+    .title_1 {
+      text-align: center;
+      font-size: 2rem;
+      border-bottom: solid 1px #999;
+    }
+    p {
+      margin: 5px 20px 0;
+    }
+    p::first-letter {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="nav">
+    <div class="nav-icon">
+      <div class="icon">
+        <i class="fa-solid fa-globe"></i>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="#" class="item-box">1</a>
+      <a href="#" class="item-box">2</a>
+      <a href="#" class="item-box">3</a>
+    </div>
+  </div> -->
+  <div class="container">
+    <div class="banner banr-1"></div>
+    <div class="scroll_btn_1">SCROLL DOWN</div>
+  </div>
+  <div class="title_content_1">
+    <h2 class="title_1">Title</h2>
+    <p class="content_">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, explicabo fugiat impedit perspiciatis autem sint ad tenetur cupiditate, accusantium eum repellat nobis aut similique laborum consectetur ex eaque soluta iste blanditiis eligendi placeat. Obcaecati culpa mollitia eius aliquam sequi deserunt repudiandae commodi esse. Modi minima repudiandae ipsa sint! Fugit, tenetur?</p>
+  </div>
+  <div class="container">
+    <div class="banner banr-2"></div>
+    <!-- <div class="btn_mask-2"></div> -->
+    <div class="scroll_btn_1">SCROLL DOWN</div>
+  </div>
+  <div class="title_content_1">
+    <h2 class="title_1">Title</h2>
+    <p class="content_">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, explicabo fugiat impedit perspiciatis autem sint ad tenetur cupiditate, accusantium eum repellat nobis aut similique laborum consectetur ex eaque soluta iste blanditiis eligendi placeat. Obcaecati culpa mollitia eius aliquam sequi deserunt repudiandae commodi esse. Modi minima repudiandae ipsa sint! Fugit, tenetur?</p>
+  </div>
+  <div class="container">
+    <div class="banner banr-3"></div>
+    <div class="scroll_btn_1">SCROLL DOWN</div>
+  </div>
+  <div class="title_content_1">
+    <h2 class="title_1">Title</h2>
+    <p class="content_">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, explicabo fugiat impedit perspiciatis autem sint ad tenetur cupiditate, accusantium eum repellat nobis aut similique laborum consectetur ex eaque soluta iste blanditiis eligendi placeat. Obcaecati culpa mollitia eius aliquam sequi deserunt repudiandae commodi esse. Modi minima repudiandae ipsa sint! Fugit, tenetur?</p>
+  </div>
+</body>
+</html>

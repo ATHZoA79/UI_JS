@@ -1,0 +1,14 @@
+- 檢討作業、挑戰題修正
+- img 、url、檔案路徑
+
+##　背景
+- backfround-image
+- background-size: contain; //維持顯示整張圖片
+- background-position
+- background-attachment: fixed; //固定背景圖像位置
+=> 視差混動 parallax
+
+- box-shadow
+- backgroud-image: linear-gradient(deg, color1, color2);
+
+### 作業

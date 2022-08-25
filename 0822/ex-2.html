@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .ham {
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      position: relative;
+      background: #39f;
+    }
+    .ham .line {
+      width: 80%;
+      height: 10px;
+      /* border: solid 2px #000; */
+      position: absolute;
+      left: 50%;
+      translate: -50% -50%;
+      background: #000;
+      opacity: 1;
+      transition: all ease-out .4s;
+    }
+    .ham .line-1 {
+      top: 25%;
+    }
+    .ham:focus .line-1 {
+      top: 50%;
+      transform:  rotate(45deg);
+    }
+    .ham .line-2 {
+      top: 50%;
+    }
+    .ham:focus .line-2 {
+      opacity: 0;
+    }
+    .ham .line-3 {
+      top: 75%;
+    }
+    .ham:focus .line-3 {
+      top: 50%;
+      transform:  rotate(-45deg);
+    }
+    </style>
+</head>
+<body>
+  <div class="ham" tabindex="1">
+    <div class="line line-1"></div>
+    <div class="line line-2"></div>
+    <div class="line line-3"></div>
+  </div>
+</body>
+</html>
