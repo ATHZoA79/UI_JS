@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+  <style>
+    #a {
+      width: 100px;
+      height: 100px;
+      background: #f69;
+    }
+    .b {
+      background: #39f;
+    }
+
+    div {
+      width: 50px;
+      height: 50px;
+      background: #ccc;
+    }
+    .big {
+      width: 300px;
+      height: 300px;
+    }
+    .small {
+      width: 150px;
+      height: 150px;
+      margin: 75px;
+    }
+    .big.blue {
+      background: aqua;
+    }
+    .small.red {
+      background: #f90;
+    }
+    .red {
+      background: #f00;
+    }
+    .blue {
+      background: #00f;
+    }
+    #yellow {
+      background: #ff0;
+    }
+  </style>
+<body>
+
+  <!-- CSS priority -->
+  <div id="a" class="b"></div>
+
+  <div class="big"></div>
+  <div class="small blue"></div>
+  <div class="big blue"></div>
+  <div class="big yellow"></div>
+  <div class="big small yellow red blue"></div>
+  <div id=" yellow" class="big small red blue"></div>
+  <div class="red"></div>
+</body>
+</html>

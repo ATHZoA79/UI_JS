@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./swiper.css"> -->
+
+
+</head>
+<body>
+  <nav class="container-normal">
+    <div class="logo">
+      <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="">
+    </div>
+    <ul class="pc-menu">
+      <li>
+        <a href="#">Microsoft 365</a>
+      </li>
+      <li>
+        <a href="#">Teams</a>
+      </li>
+      <li>
+        <a href="#">Windows</a>
+      </li>
+      <li>
+        <a href="#">Surface</a>
+      </li>
+      <li class="r-873">
+        <a href="#">xbox</a>
+      </li>
+      <li class="r-873">
+        <a href="#">支援</a>
+      </li>
+      <li class="more">
+        <a href="#">更多</a>
+      </li>
+    </ul>
+    <ul class="func-menu">
+      <!-- 漢堡條 -->
+      <li class="ham-small">
+        <i class="fa-solid fa-bars"></i>
+      </li>
+      <li class="all-microsoft r-1399">
+        <a href="#">
+          <span>所有 Microsoft</span>
+          <img src="./img/down-arrow.png" alt="">
+        </a>
+      </li>
+      <li class="search r-1399">
+        <a href="#">
+          <span>搜尋</span>
+          <img src="./img/magnify-scope.png" alt="">
+        </a>
+      </li>
+      <li class="cart">
+        <a href="#">
+          <span>購物車</span>
+          <img src="./img/cart.png" alt="">
+        </a>
+      </li>
+      <li class="client">
+        <a href="#">
+          <span></span>
+          <img src="./img/user-icon.svg" alt="">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide my-swiper-slide">
+          <div>
+            <picture>
+              <source media="(min-width: 1400px)" srcset="./img/Surface-Pro-8-1920x600.jpeg">
+              <source media="(min-width: 1084px)" srcset="./img/Surface-Pro-8-1399x600.jpeg">
+              <source media="(min-width: 860px)" srcset="./img/Surface-Pro-8-1083x600.jpeg">
+              <source media="(min-width: 540px)" srcset="./img/Surface-Pro-8-859x540.webp">
+              <img class="" alt="有個人拿著 Surface 手寫筆使用 Surface Pro 8。" src="./img/Surface-Pro-8-539x440.webp">
+            </picture>
+          </div>
+          <div class="main-text">
+            AAAAAAAAAAA
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+          el: ".swiper-pagination",
+        },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

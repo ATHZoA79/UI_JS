@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 13px;
+  font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",微軟正黑體,Helvetica,Arial,sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: black;
+}
+
+.container-normal, .container-full {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding:0;
+}
+
+.container-normal {
+  background-color: lightgray;
+}
+
+.container-full {
+  background-color: grey;
+}
+
+@media (max-width: 1800px){
+  .container-normal {
+    padding: 0 5%;
+  }
+}
+
+nav.container-normal {
+  width: 100%;
+  height: 54px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 108px;
+  /* height: 23px; */
+}
+
+@media (max-width: 859px) {
+  nav {
+    position: relative;
+  }
+
+  .logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.pc-menu, .func-menu {
+  list-style: none;
+  display: flex;
+}
+
+.pc-menu {
+  width: 1120px;
+  /* background-color: bisque; */
+}
+
+/* .pc-menu li, .func-menu li{
+  display: inline-block;
+  padding-bottom: 1px;
+  border-bottom: 2px solid white;
+} */
+
+.pc-menu li {
+  margin-right: 20px;
+}
+
+.pc-menu li a {
+  display: flex;
+  align-items: center;
+}
+
+.icon-more {
+  width: 10px;
+  /* height:20px; */
+  margin-top: 10px;
+}
+
+.pc-menu li:nth-last-of-type(1){
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .pc-menu li {
+    margin-right: 15px;
+  }
+}
+
+.pc-menu li:hover, .func-menu li:hover {
+  border-bottom: 2px solid black;
+  padding-bottom: 1px;
+}
+
+@media (max-width: 875px) {
+  .pc-menu li:nth-last-of-type(2), .pc-menu li:nth-last-of-type(3){
+    display: none;
+  }
+
+  .pc-menu li:nth-last-of-type(1){
+    display: block;
+  }
+}
+
+@media (max-width: 859px) {
+  .pc-menu {
+    display: none;
+  }
+}
+
+.func-menu {
+  max-width: 370px;
+  width: 100%;
+  height: 30px;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  /* background-color: aquamarine; */
+  word-break: keep-all;
+}
+
+.ham-small {
+  display: none;
+}
+
+@media (max-width: 1399px) {
+  .func-menu .menu-text {
+    display: none;
+  }
+}
+
+@media (max-width: 859px) { 
+  .func-menu {
+    max-width: 100%;
+  } 
+
+  .all-microsoft {
+    display: none;
+  }
+
+  .ham-small {
+    display: block;
+  }
+
+  .searh-something {
+    margin-right: auto;
+  }
+}
+
+.func-menu li {
+  margin-left: 14px;
+}
+
+.func-menu li a {
+  display: flex;
+  align-items: center;
+}
+
+.icon-all-microsoft {
+  width: 10px;
+  /* height:20px; */
+  margin-top: 10px;
+}
+
+.icon-search {
+  width: 16px;
+  /* height: 16px; */
+  margin-left: 5px;
+}
+
+.icon-login {
+  width: 32px;
+  margin-left: 10px;
+}
+
+.ham-menu {
+  /* 很重要 */
+  display: block;
+  width: 32px;
+  height: 28px;
+  background-image: url(../micro-img/nav-img/rwd-1.png);
+}
+
+
+@media (max-width: 859px) { 
+  #ham-menu-switch:checked+.ham-menu {
+    background-image: url(../micro-img/nav-img/rwd-x.png);
+  }
+
+  #ham-menu-switch:checked~.nav-menu {
+      /* display:block; */
+      /* 有利用到 flex的屬性功能 必須改成display:flex*/
+      display: flex;
+      position: absolute; 
+      top: 100px;
+      left: 5%;
+      width: 80px;
+      background-color: lightgrey;
+      padding: 5px;
+    }
+}
+
+
+

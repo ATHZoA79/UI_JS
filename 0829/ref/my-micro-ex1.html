@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./my-micro-ex1.css">
+  <link rel="stylesheet" href="./micro-swiper.css">
+</head>
+
+<body>
+  <nav class="container-normal">
+    <div class="logo">
+      <img src="./micro-img/nav-img/micro-logo.png" alt="">
+    </div>
+    <ul class="pc-menu">
+      <li> <a href="#"> Mircosoft 365 </a> </li>
+      <li> <a href="#"> Teams </a> </li>
+      <li> <a href="#"> Windows </a> </li>
+      <li> <a href="#"> Surface </a> </li>
+      <li> <a href="#"> Xbox </a> </li>
+      <li> <a href="#"> 支援 </a> </li>
+      <li>
+        <a href="#">
+          <span> 更多 </span>
+          <img class="icon-more" src="./micro-img/nav-img/chevron-down.svg" alt="">
+        </a>
+      </li>
+    </ul>
+    <ul class="func-menu">
+      <li class="ham-small">
+        <input type="checkbox" id="ham-menu-switch" hidden>
+        <label for="ham-menu-switch" class="ham-menu">
+          <a href="#" class="last-menu-item">
+          </a>
+        </label>
+      </li>
+      <li class="all-microsoft">
+        <a href="#" class="last-menu-item">
+          <span>所有 Microsoft</span>
+          <img class="icon-all-microsoft" src="./micro-img/nav-img/chevron-down.svg" alt="">
+        </a>
+      </li>
+      <li class="searh-something">
+        <a href="#" class="last-menu-item">
+          <span class="menu-text">搜尋</span>
+          <img class="icon-search" src="./micro-img/icon/search.png" alt="">
+        </a>
+      </li>
+      <li class="car">
+        <a href="#" class="last-menu-item">
+          <span class="menu-text">購物車</span>
+          <img class="icon-car" src="./micro-img/nav-img/car-1.png" alt="">
+        </a>
+      </li>
+      <li class="login-man">
+        <a href="#" class="last-menu-item">
+          <span class="menu-text">登入</span>
+          <img class="icon-login" src="./micro-img/nav-img/man.png" alt="">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide my-swiper-slide">
+          <div>
+            <picture>
+              <source media="(min-width: 1400px)" srcset="./micro-img/swiper-img/swiper-1920x600.jpg">
+              <source media="(min-width: 1084px)" srcset="./micro-img/swiper-img/swiper-1399x600.jpg">
+              <source media="(min-width: 860px)" srcset="./micro-img/swiper-img/swiper-1083x600.avif">
+              <source media="(min-width: 540px)" srcset="./micro-img/swiper-img/swiper-859x540.avif">
+              <img class="" alt="有個人拿著 Surface 手寫筆使用 Surface Pro 8。" src="../img/Surface-Pro-8-859x540.webp">
+            </picture>
+          </div>
+          <div class="main-text">
+            AAAAAAAAAAA
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </header>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper",{
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
