@@ -1,0 +1,640 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+
+.scene {
+  width: 800px;
+  height: 500px;
+  border-radius: 15px;
+  background: linear-gradient(210deg, #1A449D, #1D2C4C);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.moon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: inset 0px 16px #FFCC33, inset 0px 16px 1px #FFCC33;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translate(0, 0);
+  transform: rotate(135deg);
+}
+
+.name {
+  color: white;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: inherit;
+  letter-spacing: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.allstar {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes flying {
+  0%, 100% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(100px, 0);
+  }
+  100% {
+    transform: translate(0, 350px);
+  }
+}
+
+@keyframes flying {
+  0%, 100% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(100px, 0);
+  }
+  100% {
+    transform: translate(0, 350px);
+  }
+}
+.star1 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(137, 111, 126);
+  position: absolute;
+  top: 26.6023562147%;
+  left: 638.7546847509px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.6290070482s;
+          animation-delay: -0.6290070482s;
+  -webkit-animation-duration: 2.120049025s;
+          animation-duration: 2.120049025s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star2 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(249, 42, 10);
+  position: absolute;
+  top: 27.7258186336%;
+  left: 236.4465410475px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.4594898013s;
+          animation-delay: -0.4594898013s;
+  -webkit-animation-duration: 3.6763683646s;
+          animation-duration: 3.6763683646s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star3 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(181, 88, 31);
+  position: absolute;
+  top: 0.4314325703%;
+  left: 132.8930108472px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.5937955012s;
+          animation-delay: -0.5937955012s;
+  -webkit-animation-duration: 3.075715987s;
+          animation-duration: 3.075715987s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star4 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(153, 229, 136);
+  position: absolute;
+  top: 21.3635475265%;
+  left: 309.1018068747px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.9407487867s;
+          animation-delay: -0.9407487867s;
+  -webkit-animation-duration: 2.432494158s;
+          animation-duration: 2.432494158s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star5 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(177, 189, 169);
+  position: absolute;
+  top: 6.7141634655%;
+  left: 416.135605063px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.5591888666s;
+          animation-delay: -0.5591888666s;
+  -webkit-animation-duration: 2.5424628764s;
+          animation-duration: 2.5424628764s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star6 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(226, 46, 192);
+  position: absolute;
+  top: 7.6909368931%;
+  left: 217.0431834484px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.7172246814s;
+          animation-delay: -0.7172246814s;
+  -webkit-animation-duration: 3.5049179008s;
+          animation-duration: 3.5049179008s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star7 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(61, 37, 124);
+  position: absolute;
+  top: 3.205766431%;
+  left: 716.3910397632px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.081333985s;
+          animation-delay: -0.081333985s;
+  -webkit-animation-duration: 4.2369899662s;
+          animation-duration: 4.2369899662s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star8 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(84, 174, 122);
+  position: absolute;
+  top: 13.3212434534%;
+  left: 595.3527171833px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.3337552074s;
+          animation-delay: -0.3337552074s;
+  -webkit-animation-duration: 4.7966481522s;
+          animation-duration: 4.7966481522s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star9 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(142, 85, 113);
+  position: absolute;
+  top: 12.7480576725%;
+  left: 777.5992292791px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.4677448141s;
+          animation-delay: -0.4677448141s;
+  -webkit-animation-duration: 2.6359999383s;
+          animation-duration: 2.6359999383s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star10 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(118, 250, 61);
+  position: absolute;
+  top: 14.9740495368%;
+  left: 539.8681580533px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.130862945s;
+          animation-delay: -0.130862945s;
+  -webkit-animation-duration: 3.1921070492s;
+          animation-duration: 3.1921070492s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star11 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(87, 81, 10);
+  position: absolute;
+  top: 28.4502971171%;
+  left: 262.6685796661px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.111480442s;
+          animation-delay: -0.111480442s;
+  -webkit-animation-duration: 4.6774570599s;
+          animation-duration: 4.6774570599s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star12 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(115, 45, 123);
+  position: absolute;
+  top: 28.9416597998%;
+  left: 418.8633009009px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.194574148s;
+          animation-delay: -0.194574148s;
+  -webkit-animation-duration: 4.2382562289s;
+          animation-duration: 4.2382562289s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star13 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(168, 63, 7);
+  position: absolute;
+  top: 15.7995942067%;
+  left: 405.9088713507px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.8932825195s;
+          animation-delay: -0.8932825195s;
+  -webkit-animation-duration: 4.8219505253s;
+          animation-duration: 4.8219505253s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star14 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(252, 65, 100);
+  position: absolute;
+  top: 8.5289362277%;
+  left: 454.9539317834px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.9824643297s;
+          animation-delay: -0.9824643297s;
+  -webkit-animation-duration: 2.3891160346s;
+          animation-duration: 2.3891160346s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star15 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(165, 168, 249);
+  position: absolute;
+  top: 2.4199578984%;
+  left: 549.6914157548px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.9861197803s;
+          animation-delay: -0.9861197803s;
+  -webkit-animation-duration: 4.36966393s;
+          animation-duration: 4.36966393s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star16 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(221, 3, 223);
+  position: absolute;
+  top: 10.8321207931%;
+  left: 423.4936731482px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.1254320126s;
+          animation-delay: -0.1254320126s;
+  -webkit-animation-duration: 4.3815449802s;
+          animation-duration: 4.3815449802s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star17 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(148, 242, 1);
+  position: absolute;
+  top: 6.2358884097%;
+  left: 581.4679681477px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.6190641007s;
+          animation-delay: -0.6190641007s;
+  -webkit-animation-duration: 2.912154703s;
+          animation-duration: 2.912154703s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star18 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(201, 101, 154);
+  position: absolute;
+  top: 25.6992464551%;
+  left: 591.1857590326px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.7260993568s;
+          animation-delay: -0.7260993568s;
+  -webkit-animation-duration: 3.5625517987s;
+          animation-duration: 3.5625517987s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star19 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(31, 26, 93);
+  position: absolute;
+  top: 24.0205712523%;
+  left: 353.9003258273px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.0634122705s;
+          animation-delay: -0.0634122705s;
+  -webkit-animation-duration: 3.8448287198s;
+          animation-duration: 3.8448287198s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star20 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(207, 145, 146);
+  position: absolute;
+  top: 17.6715323389%;
+  left: 671.0051365533px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.6234315484s;
+          animation-delay: -0.6234315484s;
+  -webkit-animation-duration: 4.8228260489s;
+          animation-duration: 4.8228260489s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star21 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(74, 231, 130);
+  position: absolute;
+  top: 0.7456876849%;
+  left: 596.3154057429px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.6477012771s;
+          animation-delay: -0.6477012771s;
+  -webkit-animation-duration: 4.964983904s;
+          animation-duration: 4.964983904s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star22 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(252, 87, 65);
+  position: absolute;
+  top: 29.9300834378%;
+  left: 661.569063587px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.5219299389s;
+          animation-delay: -0.5219299389s;
+  -webkit-animation-duration: 2.6409858623s;
+          animation-duration: 2.6409858623s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star23 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(179, 165, 118);
+  position: absolute;
+  top: 0.2148943578%;
+  left: 530.2293650506px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.6176901117s;
+          animation-delay: -0.6176901117s;
+  -webkit-animation-duration: 4.068162512s;
+          animation-duration: 4.068162512s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star24 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(46, 65, 250);
+  position: absolute;
+  top: 4.0310296815%;
+  left: 619.6784134198px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.5718862369s;
+          animation-delay: -0.5718862369s;
+  -webkit-animation-duration: 4.6108395609s;
+          animation-duration: 4.6108395609s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star25 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(71, 12, 111);
+  position: absolute;
+  top: 8.6701983594%;
+  left: 35.7624223511px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.415053029s;
+          animation-delay: -0.415053029s;
+  -webkit-animation-duration: 3.6393865051s;
+          animation-duration: 3.6393865051s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star26 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(221, 129, 41);
+  position: absolute;
+  top: 20.9254149298%;
+  left: 524.7338522956px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.7896517363s;
+          animation-delay: -0.7896517363s;
+  -webkit-animation-duration: 3.4729626409s;
+          animation-duration: 3.4729626409s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star27 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(119, 23, 35);
+  position: absolute;
+  top: 19.8022148972%;
+  left: 524.5485474421px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.5783363111s;
+          animation-delay: -0.5783363111s;
+  -webkit-animation-duration: 2.1944973962s;
+          animation-duration: 2.1944973962s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star28 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(109, 250, 129);
+  position: absolute;
+  top: 9.9572867668%;
+  left: 186.9281708752px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.1917083702s;
+          animation-delay: -0.1917083702s;
+  -webkit-animation-duration: 3.7520524104s;
+          animation-duration: 3.7520524104s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.star29 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(12, 210, 255);
+  position: absolute;
+  top: 22.0310589751%;
+  left: 479.8293939578px;
+  transform: translate(0, 0);
+  -webkit-animation-name: flying;
+          animation-name: flying;
+  -webkit-animation-delay: -0.0092183501s;
+          animation-delay: -0.0092183501s;
+  -webkit-animation-duration: 2.545781508s;
+          animation-duration: 2.545781508s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}/*# sourceMappingURL=moon_card.css.map */

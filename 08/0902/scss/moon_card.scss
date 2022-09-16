@@ -1,0 +1,98 @@
+$color_blue_light:#1A449D;
+$color_blue_black:#1D2C4C;
+$scene_blue_gradient:linear-gradient(210deg, $color_blue_light, $color_blue_black);
+//定義出現之div的呈現特性
+@mixin size ($w, $h, $bdrs:0, $bgc:rgba(0,0,0,0)){
+    width: $w;
+    height: $h;
+    border-radius: $bdrs;
+    background: $bgc;
+}
+//display:flex的設定
+@mixin flex($j, $a) {
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+}
+//position:absolute
+@mixin poa($t:0, $l:0, $tX:0, $tY:0) {
+    position: absolute;
+    top:$t;
+    left: $l;
+    transform: translate($tX, $tY);
+}
+
+//font
+@mixin font($c, $fz, $fw:inherit, $lh:inherit, $ls:inherit) {
+    color: $c;
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    @include size(100%, 100vh, 0);
+    @include flex(center,center);
+    background-color: #222;
+}
+
+.scene{
+    @include size(800px, 500px, 15px, $scene_blue_gradient );
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.moon{
+    @include size(50px, 50px, 50%, rgba(0,0,0,0));
+    box-shadow: inset 0px 16px #FFCC33, inset 0px 16px 1px #FFCC33;
+    @include poa(20%, 10%);
+    transform: rotate(135deg);
+}
+
+.name{
+    @include font(white, 4rem, 900,);
+    @include poa(50%, 50%, -50%, -50%);
+}
+
+.allstar{
+    @include size(100%, 100%);
+    @include poa(50%, 50%, -50%, -50%);
+}
+
+@keyframes flying{
+    0%, 100%{
+        opacity: 0;
+    }
+    
+    60%{
+        opacity: 1;
+    }
+
+    0%{
+        transform: translate(100px, 0);
+    }
+
+    100%{
+        transform: translate(0, 350px);
+    }
+}
+
+@for $i from 1 to 30 {
+        .star#{$i} {
+            //流星大小
+            @include size(5px, 5px, 50%, rgb(random(255), random(255), random(255)));
+            @include poa(random()*30%, random()*800px);
+            
+            //流星動畫
+            animation-name: flying;
+            animation-delay: random() * -1s;
+            animation-duration: random() * 3s +2s;
+            animation-iteration-count: infinite;
+        }
+}
