@@ -4,28 +4,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header>
     <nav>
-      <a href="#" class="toggle-list">
-        <i class="fa-solid fa-bars"></i>
-      </a>
+        <input type="checkbox" id="ham" hidden>
+        <label class="ham" for="ham">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+        </label>
+      <div class="toggle-menu">
+        <div class="toggle-item">Microsoft 365</div>
+        <div class="toggle-item">Teams</div>
+        <div class="toggle-item">Windows</div>
+        <div class="toggle-item">Surface</div>
+        <div class="toggle-item">Xbox</div>
+        <div class="toggle-item">支援</div>
+        <div class="toggle-item">
+          <div class="txt">軟體</div>
+          <div class="inner-list"></div>
+        </div>
+        <div class="toggle-item">個人電腦和設備</div>
+        <div class="toggle-item">娛樂</div>
+        <div class="toggle-item">商務應用</div>
+        <div class="toggle-item">開發人員與 IT</div>
+        <div class="toggle-item">其他</div>
+        <div class="toggle-item">檢視網站地圖</div>
+      </div>
       <div class="logo">
         <img src="./img/MS-logo.png" alt="">
       </div>
       <div class="nav-list">
         <ul>
-          <li>Microsoft 365</li>
-          <li>Teams</li>
-          <li>Windows</li>
-          <li>Surface</li>
-          <li>xbox</li>
-          <li>支援</li>
-          <li>更多</li>
+          <li><a href="#">Microsoft 365</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">Windows</a></li>
+          <li><a href="#">Surface</a></li>
+          <li><a href="#">xbox</a></li>
+          <li><a href="#">支援</a></li>
+          <li><a href="#">更多</a></li>
         </ul>
       </div>
       <div class="service">
@@ -55,7 +79,7 @@
             <source  media="(min-width: 860px)" srcset="./img/Surface-Pro-8-1083x600.jpeg">
             <source media="(min-width: 540px)" srcset="./img/Surface-Pro-8-859x540.webp">
             <img class="card-img w-100 blur-up lazypreload lazyloaded" alt="有個人拿著 Surface 手寫筆使用 Surface Pro 8。" src="./img/Surface-Pro-8-539x440.webp">
-        </picture>
+          </picture>
           <div class="banner-txt">
             <div>
               <h2>Surface Pro 8</h2>
@@ -85,6 +109,7 @@
           </div>
         </div>
       </div>
+      
       <div class="switch-btn">
         <a href="#" class="arrow-left">
           <i class="fa-solid fa-chevron-left" onclick="moveSlide(-1)"></i>
@@ -92,7 +117,6 @@
         <div class="dot">
           <i class="fa-solid fa-circle"></i>
           <i class="fa-solid fa-circle"></i>
-          <!-- <i class="fa-regular fa-circle"></i> -->
         </div>
         <a href="#"  class="arrow-right" onclick="moveSlide(1)">
           <i class="fa-solid fa-chevron-right"></i>
@@ -102,15 +126,15 @@
     <div class="container-1">
       <div class="item">
         <img src="./img/gldn-Quick-Link-Icon-80x80-Microsoft-365.webp" alt="">
-        <p>選擇您的 Microsoft 365</p>
+        <a href="#">選擇您的 Microsoft 365</a>
       </div>
       <div class="item">
         <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-surface-kickstand-120x120?wid=40&hei=40" alt="">
-        <p>選購 Surface 裝置</p>
+        <a href="#">選購 Surface 裝置</a>
       </div>
       <div class="item">
         <img src="./img/gldn-Quick-Link-Icon-80x80-Microsoft-365.webp" alt="">
-        <p>取得 Windows 11</p>
+        <a href="#">取得 Windows 11</a>
       </div>
     </div>
     <div class="container-2">

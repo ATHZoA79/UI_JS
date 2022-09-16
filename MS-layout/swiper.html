@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./myStyle.css">
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+
+  <body>
+    
+    <header>
+      <nav>
+        <a href="#" class="toggle-list">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <div class="logo">
+          <img src="./img/MS-logo.png" alt="">
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li>Microsoft 365</li>
+            <li>Teams</li>
+            <li>Windows</li>
+            <li>Surface</li>
+            <li>xbox</li>
+            <li>支援</li>
+            <li>更多</li>
+          </ul>
+        </div>
+        <div class="service">
+          <a href="#" class="product">
+            所有Microsoft
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="search">
+            <i class="bi bi-search"></i>
+          </div>
+          <div class="cart">
+            <i class="bi bi-cart3"></i>
+          </div>
+          <div class="client">
+            <img src="./img/user-icon.svg" alt="">
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source  media="(min-width: 1400px)" srcset="./img/Surface-Pro-8-1920x600.jpeg">
+            <source  media="(min-width: 1084px)" srcset="./img/Surface-Pro-8-1399x600.jpeg">
+            <source  media="(min-width: 860px)" srcset="./img/Surface-Pro-8-1083x600.jpeg">
+            <source media="(min-width: 540px)" srcset="./img/Surface-Pro-8-859x540.webp">
+            <img class="card-img w-100 blur-up lazypreload lazyloaded" alt="有個人拿著 Surface 手寫筆使用 Surface Pro 8。" src="./img/Surface-Pro-8-539x440.webp">
+          </picture>
+          <div class="banner-txt">
+            <div>
+              <h2>Surface Pro 8</h2>
+              <p>
+                運用更大的 13 吋觸控螢幕、更快的連線，以及提升的速度，成就更多。現在提供 Windows 11。
+              </p>
+              <a href="">深入了解</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source  media="(min-width: 1400px)" srcset="./img/Surface-Laptop-Go-1920x600.webp">
+            <source  media="(min-width: 1084px)" srcset="./img/Surface-Laptop-Go-1399x600.webp">
+            <source  media="(min-width: 860px)" srcset="./img/Surface-Laptop-Go-1083x600.jpeg">
+            <source media="(min-width: 540px)" srcset="./img/Surface-Laptop-Go-859x540.jpeg">
+            <img class="card-img w-100 blur-up lazypreload lazyloaded" alt="有個人拿著 Surface 手寫筆使用 Surface Pro 8。" src="./img/Surface-Laptop-Go-539x440.jpeg">
+          </picture>
+          <div class="banner-txt">
+            <div>
+              <h2>Surface Laptop Go 2</h2>
+              <p>
+                外型時尚的筆記型電腦配備 12.4 吋觸控螢幕、絕佳的打字體驗，以及改良的 HD 相機
+              </p>
+              <a href="">深入了解</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="container-1">
+      <div class="item">
+        <img src="./img/gldn-Quick-Link-Icon-80x80-Microsoft-365.webp" alt="">
+        <p>選擇您的 Microsoft 365</p>
+      </div>
+      <div class="item">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-surface-kickstand-120x120?wid=40&hei=40" alt="">
+        <p>選購 Surface 裝置</p>
+      </div>
+      <div class="item">
+        <img src="./img/gldn-Quick-Link-Icon-80x80-Microsoft-365.webp" alt="">
+        <p>取得 Windows 11</p>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <div class="inner-box">
+        <div class="card">
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-m365-icons-7up-1668x940?wid=297&hei=167&fit=crop" alt="">
+          <h2>Microsoft 365</h2>
+          <p>進階版 Office 應用程式、額外的雲端儲存空間、進階安全性等功能，全都在一個方便的訂閱中。</p>
+          <a href="#"><span>最多可供 6 人使用</span><p>></p></a>
+          <a href="#"><span>適合 1 人使用</span><p>></p></a>
+        </div>
+        <div class="card">
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Gldn-mscom-01-Black-Platinum-CP01?wid=297&hei=167&fit=crop" alt="">
+          <h2>Surface Laptop 4</h2>
+          <p>運用完美結合時尚外型、超薄設計、多工速度和增強效能的裝置，一手包辦。</p>
+          <a href="#"><span>立即選購</span><p>></p></a>
+        </div>
+      </div>
+      <div class="inner-box">
+        <div class="card">
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=297&hei=167&fit=crop" alt="">
+          <h2>Microsoft Edge</h2>
+          <p>在您瀏覽時提供世界級的效能，以及更多的隱私、更充足的生產力與更高的價值。</p>
+          <a href="#"><span>立即下載</span><p>></p></a>
+          </div>
+        <div class="card">
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-AEM-PC-Game-Pass-Expansion-No-Logo?wid=297&hei=167&fit=crop" alt="">
+          <h2>PC Game Pass</h2>
+          <p>解鎖 100 多款精彩遊戲和 EA Play，而且首月只需 NT$30。 此優惠僅適用於新訂閱者。</p>
+          <a href="#"><span>立即加入</span><p>></p></a>
+        </div>  
+      </div>
+    </div>
+
+    <div class="banner-2">
+      <picture>
+        <source  media="(min-width: 1400px)" srcset="./img/OneDriveCampaignRefresh-1596x600.jpeg">
+        <source  media="(min-width: 1084px)" srcset="./img/OneDriveCampaignRefresh-1260x600.jpeg">
+        <source  media="(min-width: 860px)" srcset="./img/OneDriveCampaignRefresh-1083x600.webp">
+        <source media="(min-width: 540px)" srcset="./img/OneDriveCampaignRefresh-859x540.webp">
+        <img class="card-img w-100 blur-up lazypreload lazyloaded" alt="有個人拿著 Surface 手寫筆使用 Surface Pro 8。" src="./img/OneDriveCampaignRefresh-539x440.webp">
+    </picture>
+      <div class="banner-txt">
+        <div>
+          <h2>Microsoft OneDrive</h2>
+          <p>將檔案和相片儲存到 OneDrive，即可隨時隨地從任何裝置存取</p>
+          <a href="#">深入了解</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-3">
+      <h2>適用於商務</h2>
+      <div class="inner">
+        <div class="inner-box">
+          <div class="card">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-Go-2-03-M01?wid=297&hei=167&fit=crop" alt="">
+            <h2>Surface Laptop Go 2 商務版</h2>
+            <p>外型時尚、方便攜帶的筆記型電腦配備絕佳的打字體驗、Windows 11 專業版和專業級效能。</p>
+            <a href="#"><span>深入了解</span><p>></p></a>
+          </div>
+          <div class="card">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Microsoft-Teams-Commercial?wid=297&hei=167&fit=crop" alt="">
+            <h2>免費取得 Microsoft Teams
+            </h2>
+            <p>線上會議、聊天和共用雲端儲存空間，盡在一處。</p>
+            <a href="#"><span>免費註冊</span><p>></p></a>
+          </div>
+        </div>
+        <div class="inner-box">
+          <div class="card">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-M365-CP-Microsoft365-Commercial?wid=297&hei=167&fit=crop" alt="">
+            <h2>Microsoft 365 商務版</h2>
+            <p>透過功能強大的應用程式提高生產力、聯繫和安全，始終領先一步。</p>
+            <a href="#"><span>立即選購</span><p>></p></a>
+          </div>
+          <div class="card">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Windows-11-Business?wid=297&hei=167&fit=crop" alt="">
+            <h2>商務用 Windows 11 登場</h2>
+            <p>專為混合式辦公而設計。 為員工帶來實用性。 為 IT 帶來一致性。 為所有人帶來安全性。</p>
+            <a href="#"><span>深入了解</span><p>></p></a>
+          </div>
+        </div>
+      </div>
+            
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+.banner-1 .swiper-box {
+  width: 100%;
+  position: relative;
+}
+.banner-1 .swiper-box .slide {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}/*# sourceMappingURL=s-style.css.map */
