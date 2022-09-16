@@ -1,0 +1,105 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  .box {
+    width: 300px;
+    height: 300px;
+    background: #ccc;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    .line1 {
+      width: 100%;
+      height: 10px;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      background-image: linear-gradient(90deg, transparent, orange);
+      animation: toRight 3s linear 0s infinite;
+    }
+    .line2 {
+      width: 10px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: -100%;
+      background-image: linear-gradient(180deg, transparent, orange);
+      animation: toBottom 3s linear .75s infinite;
+    }
+    .line3 {
+      width: 100%;
+      height: 10px;
+      position: absolute;
+      bottom: 0;
+      right: -100%;
+      background-image: linear-gradient(270deg, transparent, orange);
+      animation: toLeft 3s linear 1.5s infinite;
+    }
+    .line4 {
+      width: 10px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -100%;
+      background-image: linear-gradient(0deg, transparent, orange);
+      animation: toTop 3s linear 2.25s infinite;
+    }
+    .load-box {
+      width: 180px;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      overflow: hidden;
+      transform: translate(-50%, -50%);
+      border-right: solid 2px #aaa;
+      animation: typing 1.5s linear infinite alternate;
+    }
+    .load-box h1 {
+      padding: 0 10px;
+    }
+  }
+}
+
+@keyframes toRight {
+  50%, 100% {
+    left: 100%;
+  }
+}
+@keyframes toBottom {
+  50%, 100% {
+    top: 100%;
+  }
+}
+@keyframes toLeft {
+  50%, 100% {
+    right: 100%;
+  }
+}
+@keyframes toTop {
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 180px;
+  }
+}

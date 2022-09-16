@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    input {
+      display: none;
+    }
+    .toggle {
+      width: 100%;
+      height: 28px;
+      background: #cff;
+      list-style: none;
+    }
+    .dropdown-menu {
+      display: none;
+    }
+    .dropdown-menu ul {
+      background: #0ac;
+    }
+    .toggle {
+      width: 100%;
+    }
+    .toggle>span {
+      margin-right: auto;
+    }
+    .chev:nth-of-type(n):checked+label {
+      background: #faa;
+    }
+    .chev:nth-of-type(n):checked+label>li{
+      background: #fc9;
+    }
+    .chev:nth-of-type(n):checked+label>li>i:nth-of-type(2) {
+      display: inline-block;
+      background: #4f9;
+    }
+    .chev:nth-of-type(n):checked+label>li>i:nth-of-type(1) {
+      display: none;
+    }
+    .chev:nth-of-type(n):checked+label .dropdown-menu:nth-of-type(n) {
+      display: block;
+    }
+    .toggle>.fa-chevron-up {
+      display: none;
+    }
+    .toggle>.fa-chevron-down {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown-box">
+    <input type="checkbox" id="chev" class="chev">
+    <label for="chev">list 1
+      <li class="toggle"><span>下拉選單</span>
+        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-up"></i>
+      </li>
+      <div class="dropdown-menu">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </div>
+    </label>
+  </div>
+  <div class="dropdown-box">
+    <input type="checkbox" id="chev-2" class="chev">
+    <label for="chev-2">list 2
+      <li class="toggle"><span>下拉選單</span>
+        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-up"></i>
+      </li>
+      <div class="dropdown-menu">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </div>
+    </label>
+  </div>
+  
+</body>
+</html>
