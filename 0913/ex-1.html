@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      max-width: 100px;
+      padding: 20px 10px;
+      border: 1px solid #ccc;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="cart" >
+    <div class="item" onclick="toDoList(this)" data-price="22">香蕉</div>
+    <div class="item" onclick="toDoList(this)"data-price="5">蘋果</div>
+    <div class="item" onclick="toDoList(this)"data-price="24">芭樂</div>
+  </div>
+
+  <script>
+    let totle;
+    
+    function toDoList(e) {
+      console.log('Clicked!');
+      console.log(`點選到${e.innerHTML}，價格為${e.dataset.price}`);
+    }
+
+    function bmi(w,h) {
+      let result = (w / Math.pow(h/100,2)).toFixed(1);
+      return result;
+    }
+    console.log(bmi(84,190));
+  </script>
+</body>
+</html>

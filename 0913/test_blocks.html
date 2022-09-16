@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #69c;
+    }
+
+    .playground {
+      width: 400px;
+      height: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      background: #ccc;
+    }
+    .playground-2 {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      background: #ccc;
+    }
+    .size-1 {
+      width: 80px;
+      height: 80px;
+      border: solid 3px #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .size-2 {
+      width: 100px;
+      height: 100px;
+      border: solid 3px #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="play-page">
+    <div class="time-remain"></div>
+    <div class="playground">
+      <!-- <div class="box"></div> -->
+    </div>
+  </div>
+
+  <script>
+    const PLAY_PAGE = document.querySelector('.play-page');
+    const PLAY_GROUND = document.querySelector('.playground');
+
+    let h = Math.floor(Math.random()*360);
+    let s = Math.floor(Math.random()*100);
+    let l = Math.floor(Math.random()*90+10);
+    let color = ` hsl(${h},${s}%,${l}%)`;
+    let color_mod = ` hsl(${h},${s}%,${(l-2-Math.random()*2).toFixed(0)}%)`;
+    let patterns = [4, 25];
+    
+    let answer = Math.floor(Math.random()*patterns[0]);
+    console.log(color, color_mod, answer);
+    PLAY_GROUND.innerHTML = "";
+    PLAY_GROUND.classList.add('playground-2');
+    for (let i = 0; i < patterns[0] ; i++) {
+      PLAY_GROUND.innerHTML += '<div class="size-2"></div>';
+      if (i == answer) {
+        PLAY_GROUND.children[i].style.background = color_mod;
+      }else {
+        PLAY_GROUND.children[i].style.background = color;
+      }
+    }
+  </script>
+</body>
+</html>
