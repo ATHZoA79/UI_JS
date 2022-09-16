@@ -1,0 +1,7 @@
+weatherElement[n].time[m].parameter.parameterName
+
+n=0 => weather
+n=1 => posibility of rain
+n=2 => minTemp
+n=3 => feels
+n=4 => MaxTemp

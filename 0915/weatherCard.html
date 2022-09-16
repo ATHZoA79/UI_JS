@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./weatherCard.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="btn radius" onclick="filter2('all')">全臺</div>
+      <!-- onclick 事件會自動找尋輸入參數是否存在 js 檔案中 -->
+      <!-- 只是一種小技巧，非正規運用 -->
+        <div class="btn radius" onclick="filter2(north)">北部地區</div>
+        <div class="btn radius" onclick="filter2(center)">中部地區</div>
+        <div class="btn radius" onclick="filter2(south)">南部地區</div>
+        <div class="btn radius" onclick="filter2(east)">東部地區</div>
+        <div class="btn radius" onclick="filter2(island)">離島地區</div>
+    </nav>
+  </header>
+
+  <div class="card-container"></div>
+
+  <footer>
+    此網頁僅供教育使用<br>
+    勞動部中彰坄分屬-前端UI與JS(Vue)框架工程師培訓班
+  </footer>
+  <script src="./weatherCard.js"></script>
+</body>
+</html>
