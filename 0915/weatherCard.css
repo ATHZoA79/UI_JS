@@ -13,16 +13,21 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background: #59a;
+  position: relative;
+  padding-bottom: 48px;
+  /* background: #59a; */
+  background-image: url(./BG.jpg);
+  background-repeat: none;
+  background-size: cover;
 }
 /* header */
 header {
   border-bottom: 2px solid #777;
-  background: rgba(0, 0, 0, .4);
+  background: rgba(0, 0, 0, .05);
   transition: .2s;
 }
 header:hover {
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .3);
 }
 header nav {
   padding: 16px 0;
@@ -53,14 +58,16 @@ header nav .btn:hover {
 .card-container .card {
   width: 240px;
   margin: 8px 12px;
-  background: rgba(255, 255, 255, 1);
-  opacity: .8;
+  padding-bottom: 10px;
+  background-color: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(10px);
   cursor: pointer;
-
+  
   transition: .25s ease-out;
 }
 .card-container .card:hover {
-  opacity: 1;
+  background-color: rgba(255, 255, 255, .5);
+  backdrop-filter: none;
 }
 .card-container .card img {
   width: 100%;
@@ -81,6 +88,8 @@ header nav .btn:hover {
 footer {
   width: 100%;
   padding: 10px 16px;
+  position: absolute;
+  bottom: 0;
   text-align: center;
   background: rgba(0, 0, 0, .8);
   color: #aaa;
